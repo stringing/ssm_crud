@@ -58,7 +58,7 @@ public class PersonController {
     }
 
     @RequestMapping("Validate")
-    public void validate(HttpServletRequest request,HttpServletResponse response){
+    public void validate(HttpServletRequest request,HttpServletResponse response){//ajax
         String name = request.getParameter("name");
         int age = personService.get(name);
         if(age==0) {
